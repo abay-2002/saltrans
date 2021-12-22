@@ -1,0 +1,23 @@
+<h1>Contoh Aplikasi Jaringan komputer</h1>
+<h2>Membuat Web server menggunakan NodeJS dan Web framework ExpressJS</h2>
+<h2>Ini adalah halaman <%= title %> </h2>
+<ul>
+    <% halaman.forEach(hlm => { %>
+      <li>
+          <a href="<%= hlm.ke %>"><%= hlm.page %> </a>
+      </li>
+    <% }) %>
+</ul>
+<% mahasiswa.forEach(mhs => { %>
+    <ol >
+      <li>
+          Nama: <%= mhs.nama %> 
+      </li>
+      <li>
+          URL :<a href="<%= mhs.url  %> "><%= mhs.detail %> </a>
+      </li>
+      <li>
+          NIM: <%= mhs.nim %> 
+      </li>
+    </ol >
+<% }) %>
